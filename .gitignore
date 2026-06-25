@@ -1,0 +1,21 @@
+# Composer
+/vendor/
+# composer.lock is intentionally not committed (this is a library)
+composer.lock
+
+# PHPUnit
+/.phpunit.cache/
+.phpunit.result.cache
+phpunit.phar
+/coverage/
+
+# Static analysis / formatting
+.php-cs-fixer.cache
+/.phpstan/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~

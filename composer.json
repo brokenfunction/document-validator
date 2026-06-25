@@ -1,0 +1,34 @@
+{
+    "name": "demo/document-validation",
+    "description": "Extensible, tenant-aware document validation component.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.4"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^11.0 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DocumentValidation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DocumentValidation\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "stan": "phpstan analyse",
+        "cs": "php-cs-fixer fix --dry-run --diff",
+        "cs:fix": "php-cs-fixer fix",
+        "demo": "php examples/integration.php"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

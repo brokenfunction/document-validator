@@ -1,0 +1,7 @@
+parameters:
+    level: max
+    paths:
+        - src
+    # Config arrives from JSON/DB at runtime, so defensive type checks on
+    # PHPDoc-typed values are intentional rather than dead code.
+    treatPhpDocTypesAsCertain: false
